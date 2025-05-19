@@ -24,7 +24,6 @@ urlpatterns = [
     path('', include('main.urls')),
     path('projects/', include('project.urls')),
     path('awards/', include('award_and_certification.urls')),
-    path('auth/', include('social_django.urls', namespace='social')),
 ]
 
 if settings.DEBUG:
