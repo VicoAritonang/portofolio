@@ -260,20 +260,6 @@
                     <li class="nav-item">
                         <a class="nav-link {% if request.resolver_match.url_name == 'award_list' %}active{% endif %}" href="{% url 'award_list' %}">Awards & Certifications</a>
                     </li>
-                    {% if user.is_authenticated %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ user.username }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="background-color: var(--secondary-color);">
-                            <li><a class="dropdown-item" href="{% url 'logout' %}" style="color: var(--text-color);">Logout</a></li>
-                        </ul>
-                    </li>
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'login' %}active{% endif %}" href="{% url 'login' %}">Login</a>
-                    </li>
-                    {% endif %}
                 </ul>
             </div>
         </div>
