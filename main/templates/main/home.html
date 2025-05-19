@@ -1,0 +1,281 @@
+{% extends 'base.html' %}
+
+{% block title %}Vico Winner Sebastian Aritonang - AI Engineer & Full-Stack Developer{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="section" id="hero" style="padding-top: 150px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="display-4 mb-4" style="font-weight: 700; color: var(--accent-color);">
+                    <span class="d-block">Vico Winner</span>
+                    <span class="d-block">Sebastian Aritonang</span>
+                </h1>
+                <h2 class="mb-4" style="font-size: 1.5rem; color: var(--highlight-color);">
+                    Agentic AI Engineer | Full-Stack Developer | Data Enthusiast
+                </h2>
+                <p class="lead mb-5">
+                    I'm a 4th semester Information Systems student at the University of Indonesia with a passion for Artificial Intelligence, particularly in the development of agentic AI—intelligent autonomous systems that interact, reason, and act across diverse domains. Currently, I specialize as an AI Engineer, focused on building modular, scalable, and production-ready autonomous agents and digital solutions.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="#contact" class="btn btn-primary px-4 py-2">Get in Touch</a>
+                    <a href="{% url 'project_list' %}" class="btn btn-outline-primary px-4 py-2">View Projects</a>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="position-relative">
+                    <div class="position-absolute" style="width: 100%; height: 100%; background: linear-gradient(45deg, rgba(0, 180, 216, 0.3), rgba(91, 192, 190, 0.3)); border-radius: 20px; transform: rotate(-5deg); z-index: 1;"></div>
+                    <img src="/static/main/photo.jpeg" alt="Vico Winner Sebastian Aritonang" class="img-fluid" style="border-radius: 20px; position: relative; z-index: 2; transform: rotate(2deg); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);">
+                    <div class="position-absolute" style="top: 20px; right: -20px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(0, 180, 216, 0.5), transparent 70%); border-radius: 50%; filter: blur(20px);"></div>
+                    <div class="position-absolute" style="bottom: -10px; left: -10px; width: 80px; height: 80px; background: radial-gradient(circle, rgba(91, 192, 190, 0.5), transparent 70%); border-radius: 50%; filter: blur(15px);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-bg"></div>
+</section>
+
+<!-- Skills Section -->
+<section class="section" id="skills" style="background-color: rgba(28, 37, 65, 0.7);">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 mb-3" style="color: var(--accent-color);">My Skills</h2>
+            <div class="mx-auto" style="width: 80px; height: 4px; background-color: var(--highlight-color); margin-bottom: 20px;"></div>
+            <p class="lead">Expertise across AI, Web, App Development, and Data Science</p>
+        </div>
+        
+        <!-- AI Engineering Skills -->
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-lg-12">
+                <div class="card glow mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div style="width: 60px; height: 60px; background-color: var(--dark-accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fas fa-brain fa-2x" style="color: var(--accent-color);"></i>
+                            </div>
+                            <h3 class="card-title mb-0">Agentic AI Engineering & Automation</h3>
+                        </div>
+                        <p class="card-text">
+                            I design, build, and deploy AI-driven automation systems using cutting-edge tools such as n8n, LangChain, and LLMs. These systems automate workflows for:
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-tools me-2" style="color: var(--highlight-color);"></i> Business process & marketing automation</li>
+                                    <li class="mb-2"><i class="fas fa-file-alt me-2" style="color: var(--highlight-color);"></i> Document logging and summarization</li>
+                                    <li class="mb-2"><i class="fas fa-home me-2" style="color: var(--highlight-color);"></i> Intelligent home assistant systems</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-robot me-2" style="color: var(--highlight-color);"></i> AI-powered chatbots and voice interfaces</li>
+                                    <li class="mb-2"><i class="fas fa-phone-alt me-2" style="color: var(--highlight-color);"></i> AI call centers with dynamic voice interaction</li>
+                                    <li class="mb-2"><i class="fas fa-film me-2" style="color: var(--highlight-color);"></i> Text-to-video generation pipelines</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            I integrate LLMs with Retrieval-Augmented Generation (RAG) using vector databases, and orchestrate agents to deliver real-world impact.
+                        </p>
+                        
+                        <h5 class="mt-4 mb-3" style="color: var(--highlight-color);">Tech Stack Highlights:</h5>
+                        <div>
+                            <span class="skill-badge"><i class="fas fa-brain me-1"></i> LangChain</span>
+                            <span class="skill-badge"><i class="fas fa-project-diagram me-1"></i> LangGraph</span>
+                            <span class="skill-badge"><i class="fas fa-keyboard me-1"></i> Prompt Engineering</span>
+                            <span class="skill-badge"><i class="fas fa-robot me-1"></i> OpenAI</span>
+                            <span class="skill-badge"><i class="fas fa-comment-alt me-1"></i> Claude</span>
+                            <span class="skill-badge"><i class="fas fa-code-branch me-1"></i> HuggingFace</span>
+                            <span class="skill-badge"><i class="fas fa-sitemap me-1"></i> n8n</span>
+                            <span class="skill-badge"><i class="fas fa-tools me-1"></i> Tool-calling</span>
+                            <span class="skill-badge"><i class="fas fa-cogs me-1"></i> MCPs</span>
+                            <span class="skill-badge"><i class="fas fa-link me-1"></i> Reasoning chain</span>
+                            <span class="skill-badge"><i class="fas fa-key me-1"></i> OAuth 2.0</span>
+                            <span class="skill-badge"><i class="fas fa-paper-plane me-1"></i> Postman</span>
+                            <span class="skill-badge"><i class="fas fa-database me-1"></i> Pinecone</span>
+                            <span class="skill-badge"><i class="fas fa-table me-1"></i> Supabase vector</span>
+                            <span class="skill-badge"><i class="fas fa-volume-up me-1"></i> ElevenLabs</span>
+                            <span class="skill-badge"><i class="fas fa-cloud me-1"></i> Google Cloud TTS</span>
+                            <span class="skill-badge"><i class="fab fa-whatsapp me-1"></i> WhatsApp Business API</span>
+                            <span class="skill-badge"><i class="fab fa-telegram me-1"></i> Telegram Bot API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Web Development Skills -->
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-lg-12">
+                <div class="card glow">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div style="width: 60px; height: 60px; background-color: var(--dark-accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fas fa-globe fa-2x" style="color: var(--accent-color);"></i>
+                            </div>
+                            <h3 class="card-title mb-0">Web Development</h3>
+                        </div>
+                        <p class="card-text">
+                            I have experience working as a full-stack web developer using Django and various frontend/backend technologies. I implement secure software development principles and manage the entire process from design to deployment.
+                        </p>
+                        
+                        <h5 class="mt-4 mb-3" style="color: var(--highlight-color);">Skills:</h5>
+                        <div>
+                            <span class="skill-badge"><i class="fas fa-sitemap me-1"></i> Draw.io</span>
+                            <span class="skill-badge"><i class="fab fa-figma me-1"></i> Figma</span>
+                            <span class="skill-badge"><i class="fab fa-html5 me-1"></i> HTML</span>
+                            <span class="skill-badge"><i class="fab fa-css3-alt me-1"></i> CSS</span>
+                            <span class="skill-badge"><i class="fab fa-js me-1"></i> JavaScript</span>
+                            <span class="skill-badge"><i class="fab fa-python me-1"></i> Django</span>
+                            <span class="skill-badge"><i class="fas fa-database me-1"></i> PostgreSQL</span>
+                            <span class="skill-badge"><i class="fas fa-database me-1"></i> MySQL</span>
+                            <span class="skill-badge"><i class="fas fa-database me-1"></i> SQLite</span>
+                            <span class="skill-badge"><i class="fas fa-fire me-1"></i> Firebase</span>
+                            <span class="skill-badge"><i class="fab fa-gitlab me-1"></i> GitLab CI/CD</span>
+                            <span class="skill-badge"><i class="fab fa-docker me-1"></i> Docker</span>
+                            <span class="skill-badge"><i class="fas fa-dharmachakra me-1"></i> Kubernetes</span>
+                            <span class="skill-badge"><i class="fas fa-cloud me-1"></i> Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- App Development Skills -->
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-lg-12">
+                <div class="card glow">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div style="width: 60px; height: 60px; background-color: var(--dark-accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fas fa-mobile-alt fa-2x" style="color: var(--accent-color);"></i>
+                            </div>
+                            <h3 class="card-title mb-0">App Development</h3>
+                        </div>
+                        <p class="card-text">
+                            I've built mobile apps both independently and through freelance work, using Flutter and FlutterFlow, with complete backend integration and deployment.
+                        </p>
+                        
+                        <h5 class="mt-4 mb-3" style="color: var(--highlight-color);">Skills:</h5>
+                        <div>
+                            <span class="skill-badge"><i class="fas fa-sitemap me-1"></i> Draw.io</span>
+                            <span class="skill-badge"><i class="fab fa-figma me-1"></i> Figma</span>
+                            <span class="skill-badge"><i class="fas fa-mobile-alt me-1"></i> Flutter (Dart)</span>
+                            <span class="skill-badge"><i class="fas fa-fire me-1"></i> Firebase</span>
+                            <span class="skill-badge"><i class="fas fa-wind me-1"></i> FlutterFlow</span>
+                            <span class="skill-badge"><i class="fas fa-vial me-1"></i> AppCenter</span>
+                            <span class="skill-badge"><i class="fas fa-gamepad me-1"></i> itch.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Data Science Skills -->
+        <div class="row" data-aos="fade-up">
+            <div class="col-lg-12">
+                <div class="card glow">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div style="width: 60px; height: 60px; background-color: var(--dark-accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fas fa-chart-bar fa-2x" style="color: var(--accent-color);"></i>
+                            </div>
+                            <h3 class="card-title mb-0">Data Science</h3>
+                        </div>
+                        <p class="card-text">
+                            I enjoy working with data and have experience performing basic to intermediate analysis using Python, R, and SPSS.
+                        </p>
+                        
+                        <h5 class="mt-4 mb-3" style="color: var(--highlight-color);">Skills:</h5>
+                        <div>
+                            <span class="skill-badge"><i class="fab fa-python me-1"></i> Pandas</span>
+                            <span class="skill-badge"><i class="fas fa-chart-line me-1"></i> Matplotlib</span>
+                            <span class="skill-badge"><i class="fas fa-chart-area me-1"></i> Seaborn</span>
+                            <span class="skill-badge"><i class="fas fa-brain me-1"></i> Scikit-learn</span>
+                            <span class="skill-badge"><i class="fas fa-calculator me-1"></i> Numpy</span>
+                            <span class="skill-badge"><i class="fab fa-r-project me-1"></i> Dplyr</span>
+                            <span class="skill-badge"><i class="fas fa-chart-pie me-1"></i> ggplot2</span>
+                            <span class="skill-badge"><i class="fas fa-window-restore me-1"></i> Shiny</span>
+                            <span class="skill-badge"><i class="far fa-clock me-1"></i> Lubridate</span>
+                            <span class="skill-badge"><i class="fas fa-tree me-1"></i> Random Forest</span>
+                            <span class="skill-badge"><i class="fas fa-users me-1"></i> KNN</span>
+                            <span class="skill-badge"><i class="fas fa-percentage me-1"></i> Naive Bayes</span>
+                            <span class="skill-badge"><i class="fas fa-object-group me-1"></i> K-Means</span>
+                            <span class="skill-badge"><i class="fas fa-chart-line me-1"></i> Regression</span>
+                            <span class="skill-badge"><i class="fas fa-analytics me-1"></i> IBM SPSS</span>
+                            <span class="skill-badge"><i class="fab fa-python me-1"></i> Jupyter</span>
+                            <span class="skill-badge"><i class="fas fa-laptop-code me-1"></i> Kaggle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 mb-3" style="color: var(--accent-color);">Connect With Me</h2>
+            <div class="mx-auto" style="width: 80px; height: 4px; background-color: var(--highlight-color); margin-bottom: 20px;"></div>
+            <p class="lead">Let's collaborate on innovative AI and tech projects</p>
+        </div>
+        
+        <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-lg-8">
+                <div class="card glow">
+                    <div class="card-body p-5">
+                        <div class="row">
+                            <div class="col-md-4 mb-4 mb-md-0">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div style="width: 80px; height: 80px; background-color: var(--dark-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                        <i class="fas fa-envelope fa-2x" style="color: var(--accent-color);"></i>
+                                    </div>
+                                    <h5 class="mb-2" style="color: var(--highlight-color);">Email</h5>
+                                    <a href="mailto:vico.winner31@ui.ac.id" class="text-decoration-none" style="color: var(--text-color);">vico.winner31@ui.ac.id</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 mb-md-0">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div style="width: 80px; height: 80px; background-color: var(--dark-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                        <i class="fab fa-linkedin-in fa-2x" style="color: var(--accent-color);"></i>
+                                    </div>
+                                    <h5 class="mb-2" style="color: var(--highlight-color);">LinkedIn</h5>
+                                    <a href="https://www.linkedin.com/in/vico-winner-sebastian-aritonang-93a609249/" target="_blank" class="text-decoration-none" style="color: var(--text-color);">Connect on LinkedIn</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <div style="width: 80px; height: 80px; background-color: var(--dark-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                        <i class="fab fa-instagram fa-2x" style="color: var(--accent-color);"></i>
+                                    </div>
+                                    <h5 class="mb-2" style="color: var(--highlight-color);">Instagram</h5>
+                                    <a href="https://www.instagram.com/sebastian.1a" target="_blank" class="text-decoration-none" style="color: var(--text-color);">@sebastian.1a</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-bg"></div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Parallax effect for hero section
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.pageYOffset;
+        const heroSection = document.querySelector('#hero');
+        const heroImage = heroSection.querySelector('img');
+        
+        if (heroImage) {
+            heroImage.style.transform = `rotate(2deg) translateY(${scrollPosition * 0.1}px)`;
+        }
+    });
+</script>
+{% endblock %} 
