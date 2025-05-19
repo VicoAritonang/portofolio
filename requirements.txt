@@ -19,3 +19,4 @@ pyOpenSSL
 werkzeug
 timedelta
 python-dotenv
+supabase
