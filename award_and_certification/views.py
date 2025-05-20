@@ -10,4 +10,5 @@ def award_list(request):
     # Fetch all papers from Supabase
     response = supabase.table("paper").select("*").order("date", desc=True).execute()
     papers = response.data if response.data else []
+    papers.date = datetime.strptime(paper.date, '%Y-%m-%d').date()
     return render(request, 'award_and_certification/award_list.html', {'papers': papers})
